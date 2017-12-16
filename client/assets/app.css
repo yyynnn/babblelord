@@ -1,0 +1,62 @@
+@import "variables.css";
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: var(--white);
+  color: #0d514c;
+  height: 100vh;
+  display: flex;
+}
+
+a {
+  color: #0d514c;
+  text-decoration: none;
+  border-bottom: 1px solid #0d514c;
+  display: inline-block;
+  line-height: 0.95;
+  text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+}
+
+ul {
+  padding-right: 21px;
+  list-style-type: none;
+  text-align: right;
+}
+
+h1 {
+  color: #507e7a;
+  margin: 0;
+}
+
+div.RichTextEditor__root___2QXK-,
+input {
+  transition: 200ms all ease-in-out;
+}
+
+div.RichTextEditor__root___2QXK-:focus,
+input:focus {
+  border: 2px solid #78b9b6;
+  outline: none;
+}
+div.RichTextEditor__root___2QXK-:hover,
+input:hover {
+  border: 2px solid #78b9b6;
+}
+
+::-webkit-input-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+}
+::-moz-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+} /* Firefox 19+ */
+:-moz-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+} /* Firefox 18- */
+:-ms-input-placeholder {
+  color: #73a7a3;
+  font-family: "CoreSans";
+}
