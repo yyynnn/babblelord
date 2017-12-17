@@ -1,6 +1,6 @@
-import path from "path";
-import webpack from "webpack";
-import ExtractTextPlugin from "extract-text-webpack-plugin";
+const path = require("path");
+const webpack = require("webpack");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   devtool: "source-map",
@@ -19,8 +19,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(gif|png|jpe?g|svg)$/i,
         loaders: [
           "file-loader",

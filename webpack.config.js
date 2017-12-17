@@ -32,8 +32,7 @@ module.exports = {
     new ExtractTextPlugin("bundle.css")
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(gif|png|jpe?g|svg)$/i,
         loaders: [
           "file-loader",
@@ -60,11 +59,9 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: "css-loader?importLoaders=1!postcss-loader"
-            }
-          ],
+          use: [{
+            loader: "css-loader?importLoaders=1!postcss-loader"
+          }],
           fallback: "style-loader"
         })
       },

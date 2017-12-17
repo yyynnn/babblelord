@@ -1,4 +1,9 @@
 {
-  "presets": ["es2015", "latest", "react", "stage-0"],
-  "plugins": ["react-hot-loader/babel"]
+  "presets": ["@babel/preset-react", ["@babel/preset-env", {
+    "targets": {
+      "browsers": ["last 2 versions", "safari >= 7"],
+      "node": "current"
+    }
+  }]],
+  "plugins": ["react-hot-loader/babel", "@babel/plugin-syntax-dynamic-import", "@babel/transform-runtime", "@babel/plugin-syntax-object-rest-spread"]
 }
