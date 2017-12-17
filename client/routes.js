@@ -5,9 +5,9 @@ import App from './containers/App.js';
 import Home from './containers/Home.js';
 
 const routes = (
-  <App modalFirstTime={false}>
-    <Route path="/" component={Home} />
-  </App>
+	<App>
+		<Route path="/" component={Home} />
+	</App>
 );
 
 export default routes;

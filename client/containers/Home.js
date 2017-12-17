@@ -1,32 +1,26 @@
-import React from "react";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 
-import "./Home.css";
+import './Home.css';
 
 class Home extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
+	constructor(props, context) {
+		super(props, context);
+	}
 
-  render() {
-    return (
-      <div className="container">
-      app
-      </div>
-    );
-  }
+	render() {
+		return <div className="container">app</div>;
+	}
 }
 
 function mapStateToProps(state) {
-  return {
-  };
+	return {};
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-  };
+	return {};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
