@@ -8,6 +8,6 @@ export default class App extends Component {
 	}
 
 	render() {
-		return <div>appppp</div>;
+		return <div>{this.props.children}</div>;
 	}
 }

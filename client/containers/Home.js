@@ -11,7 +11,7 @@ class Home extends React.Component {
 	}
 
 	render() {
-		return <div className="container">app</div>;
+		return <div className="container">babble babble .. babble and</div>;
 	}
 }
 

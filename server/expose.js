@@ -1,3 +1,1 @@
-module.exports = {
-    __dirname
-};
+module.exports = { __dirname };
